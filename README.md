@@ -52,9 +52,9 @@ HOW TO RUN PROJECT LOCALLY:
 
 4.Use the following commands to set up the database:
 
-    (i)dotnet ef migrations add InitialCreate
+    (i)dotnet of migrations add InitialCreate
 
-    (ii)dotnet ef database update
+    (ii)dotnet of database update
 
 5.Run the application with:
 
