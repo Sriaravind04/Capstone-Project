@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="container d-flex align-items-center justify-content" style="min-height:75vh;">
+    <div class="text-center">
+    <h1 class="display-4 fw-semibold mb-3">Welcome to the Bug Tracking System</h1>
+    <p class="lead text-muted mb-4">This system allows you to report and manage software bugs with role-based access.</p>
+
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <p>
+            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary">Login</a>
+            <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-secondary">Register</a>
+        </p>
+    }
+    else
+    {
+        <p>
+            <a href="/Bugs/Index"  class="btn btn-success">View My Bugs</a>
+        </p>    
+    }
+    
+</div>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Bug_Tracking_System_Auth.props" />
+</Project>
